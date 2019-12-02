@@ -1,22 +1,22 @@
 <html>
 <head>
-    <title> Clicker</title>
+    <title> cClicker</title>
 </head>
 
 <body>
     <script type="text/javascript">
-   if(clicks=undefined) { 
+   if(c=undefined) { 
     alert("OH NOES U NO HAS COOKIE");
 clicks=0;
 }
 
-    var clicks = document.cookie;
+    var c = document.cookie;
      
-    document.cookie = "clicks=clicks; expires= Thu, 21 Aug 2020 20:00:00 UTC"
+    document.cookie = "clicks=c; expires= Thu, 21 Aug 2020 20:00:00 UTC"
     function onClick() {
-
+alert(document.cookie);
         clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+        document.getElementById("clicks").innerHTML = c;
     };
     </script>
     <button type="button" onClick="onClick()">Click me</button>
