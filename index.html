@@ -11,8 +11,12 @@ c=0;
 }
 
     var c = document.cookie;
-     
-document.cookie = "click=" c; "expires= Thu, 21 Aug 2020 20:00:00 UTC"
+     <?php 
+
+setcookie("clicks", c, time()+2*24*60*60); 
+
+?> 
+
     function onClick() {
 alert(document.cookie);
         c = c+1;
