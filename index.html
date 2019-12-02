@@ -5,7 +5,14 @@
 
 <body>
     <script type="text/javascript">
-    var clicks = 0;
+   if( $.cookie('cookiename') == null ) { 
+    alert("OH NOES U NO HAS COOKIE");
+clicks=0;
+}
+
+    var clicks = document.cookie;
+     
+    document.cookie = "clicks=clicks; expires= Thu, 21 Aug 2014 20:00:00 UTC"
     function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
