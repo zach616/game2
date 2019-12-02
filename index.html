@@ -1,17 +1,15 @@
 <html>
 <head>
-<style>
-<!-- Style goes here -->
-</style>
-<script>
-  var x = 0;
-  function okay() {
-    x = x+1;
-    document.getElementById(p).innerHTML = "why"
-</script>
+    <title>Space Clicker</title>
 </head>
+
 <body>
-  <p id="p">0</p>
-  <button onclick="okay()">hey</button>
-</body>
-</html>
+    <script type="text/javascript">
+    int clicks = 0;
+    function click() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="click()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
