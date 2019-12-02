@@ -4,10 +4,14 @@
 <!-- Style goes here -->
 </style>
 <script>
+  var clicks
+  function okay() {
+    clicks += 1;
+    document.getElementById(p).innerHTML = clicks
 </script>
 </head>
 <body>
   <p id="p">okay</p>
-  <button></button
+  <button onclick="okay()">hey</button>
 </body>
 </html>
