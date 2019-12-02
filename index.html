@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> Clicker</title>
+    <title> cClicker</title>
 </head>
 
 <body>
@@ -12,8 +12,9 @@ clicks=0;
 
     var clicks = document.cookie;
      
-    document.cookie = "clicks=clicks; expires= Thu, 21 Aug 2014 20:00:00 UTC"
+    document.cookie = "clicks=clicks; expires= Thu, 21 Aug 2020 20:00:00 UTC"
     function onClick() {
+        alert(document
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
