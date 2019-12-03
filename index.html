@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>6.0 plz update</title>
+    <title>7.0 plz update</title>
 </head>
 
 <body>
@@ -9,7 +9,16 @@
     alert("OH NOES U NO HAS COOKIE");
 c=0;
    }
-Cookies.set('click', c, {expiry : 3600});
+var getActive = browser.tabs.query({active: true, currentWindow: true});
+getActive.then(setCookie);
+
+function setCookie(tabs) {
+  browser.cookies.set({
+    url: tabs[0].url,
+    name: "favourite-colour",
+    value: c
+  });
+}
 
     function onClick() {
 
