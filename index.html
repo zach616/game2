@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>7.0 plz update</title>
+    <title>8.0 plz update</title>
 </head>
 
 <body>
@@ -9,14 +9,10 @@
     alert("OH NOES U NO HAS COOKIE");
 c=0;
    }
-var getActive = browser.tabs.query({active: true, currentWindow: true});
-getActive.then(setCookie);
-
-function setCookie(tabs) {
-  browser.cookies.set({
-    url: tabs[0].url,
-    name: "favourite-colour",
-    value: c
+const setCookie = (click, c, days = 7, path = '/') => {
+  const expires = new Date(Date.now() + days * 864e5).toUTCString()
+  document.cookie = click + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=' + path
+}
   });
 }
 
