@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>9.0 plz update</title>
+    <title>10.0 plz update</title>
 </head>
 
 <body>
@@ -9,14 +9,12 @@
     alert("OH NOES U NO HAS COOKIE");
 c=0;
    }
-function setCookie(click,c,6)
-{
-   var exdate=new Date();
-   exdate.setDate(exdate.getDate() + 6);
-   var c_value=escape(c) + ((6==null) ? "" : ("; expires="+exdate.toUTCString()));
-   document.cookie=click + "=" + c_value;
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
     function onClick() {
 
         c = c+1;
