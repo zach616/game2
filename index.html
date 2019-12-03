@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>4.0 plz update</title>
+    <title>5.0 plz update</title>
 </head>
 
 <body>
@@ -11,11 +11,12 @@ c=0;
 }
 
     var c = document.cookie;
-     <?php 
-
-setcookie("clicks", c, time()+2*24*60*60); 
-
-?> 
+function setCookie(clicks, c, 23) {
+  var d = new Date();
+  d.setTime(d.getTime() + (23*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = clicks + "=" + c + ";" + expires + ";path=/";
+}
 
     function onClick() {
 alert(document.cookie);
