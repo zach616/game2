@@ -1,13 +1,19 @@
 <html>
 <head>
-    <title>Cookie Clicker</title>
+    <title>CookieClicker</title>
 </head>
 
 <body>
     <script type="text/javascript">
-
+document.getElementById("okay").height = "400";
+document.getElementById("okay").width = "400";
 var c = 0
+function myFunction {
+    document.getElementById("okay").height = "400";
+document.getElementById("okay").width = "400";
+}
     function onClick() {
+
 if(c >= 10){
     c=c+1;
 }
@@ -20,11 +26,14 @@ if(c >= 100){
 if(c >= 1000){
     c=c+3;
 }
+document.getElementById("okay").height = "200"
+document.getElementById("okay").width = "200"
+
         c = c+1;
         document.getElementById("clicks").innerHTML = c;
     };
     </script>
-    <button type="button"  onClick="onClick()"><img src="https://i.kym-cdn.com/photos/images/original/000/601/390/ae0.gif"</button>
+    <button type="button"  onClick="onClick(); setTimeout(myFunction, 1000)"><img src="https://vignette.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest?cb=20130827014912" id=okay</button>
     <p>Cookies: <a id="clicks">0</a></p>
 
 </body></html>
