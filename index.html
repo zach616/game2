@@ -1,32 +1,33 @@
 <html>
-<head>
-    <title>Cookie Clicker</title>
-</head>
-
-<body>
-    <script type="text/javascript">
-document.getElementById("okay").height = "400";
-document.getElementById("okay").width = "400";
-
-function onClick() {
-if(c >= 10){
-    c=c+1;
-}
-if(c >= 50){
-    c=c+3;
-}
-if(c >= 100){
-    c=c+2;
-}
-if(c >= 1000){
-    c=c+3;
-}
-
-        c = c+1;
-        document.getElementById("clicks").innerHTML = c;
-    };
-    </script>
-    <button type="button"  onClick="onClick()"><img src="https://vignette.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest?cb=20130827014912" id="okay"</button>
-    <p>Cookies: <a id="clicks">0</a></p>
-
-</body></html>
+    <head>
+        <title>
+            COOKIE CLICKER
+        </title>
+        <style>
+            /* style goes here */
+        </style>
+            <script>
+                var c = 0
+                function qwerty {
+                    c=c+1
+                    if(c>=10){
+                        c=c+1
+                    }
+                    if(c>=100){
+                        c=c+2
+                    }
+                    if(c>=1000){
+                        c=c+12
+                    }
+                    if(c>=10000){
+                        c=c+240
+                    }
+                }
+                        
+            </script>
+    </head>
+    <body>
+        <button onclick="qwerty"><img src="http://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button>
+        <p>Cookies:<a id="clicks">0</a>
+    </body>
+</html>
