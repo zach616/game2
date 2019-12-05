@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Cookie Clicker</title>
+    <title>CookieClicker</title>
 </head>
 
 <body>
@@ -8,39 +8,7 @@
 document.getElementById("okay").height = "400";
 document.getElementById("okay").width = "400";
 
-let start = Date.now(); // remember start time
-
-let timer = setInterval(onClick()) {
-  // how much time passed from the start?
-  let timePassed = Date.now() - start;
-
-  if (timePassed >= 2000) {
-    clearInterval(timer); // finish the animation after 2 seconds
-    return;
-  }
-
-  // draw the animation at the moment timePassed
-  draw(timePassed);
-
-}, 20);
-
-// as timePassed goes from 0 to 2000
-// left gets values from 0px to 400px
-function draw(timePassed) {
-}
-
-    function onClick() {
-var id = setInterval(frame, 5);
-
-function frame() {
-  if (document.getElementById("okay").width == 300) {
-    clearInterval(id);
-      document.getElementById("okay").width = 400;
-  } else {
-document.getElementById("okay").width = 300;
-      document.getElementById("okay").height = 300;
-  }
-}
+function onClick() {
 if(c >= 10){
     c=c+1;
 }
