@@ -1,3 +1,4 @@
+<!--
 <html>
     <head>
         <title>
@@ -34,4 +35,47 @@
         <button onClick="onClick()"><img src="http://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button>
         <p>Cookies:<a id="clicks"></a></p>
     </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function showNum() 
+{
+ document.getElementById("result").innerHTML=localStorage.click;
+}
+function clickCounter()
+{
+if(typeof(Storage)!=="undefined")
+  {
+  if (localStorage.click)
+    {
+    localStorage.click=Number(localStorage.click)+1;
+    }
+  else
+    {
+    localStorage.click=1;
+    }
+  document.getElementById("result").innerHTML="You have clicked the button " + localStorage.click + " time(s).";
+  }
+else
+  {
+  document.getElementById("result").innerHTML="Sorry, your browser does not support web storage...";
+  }
+}
+
+
+
+
+</script>
+</head>
+<body onload="showNum()">
+<p><button onclick="clickCounter()" type="button"><img src=http://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button></p>
+
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+</body>
 </html>
