@@ -7,7 +7,10 @@
             /* style goes here */
         </style>
             <script>
-                var c = 0
+                if(c==undefined){
+                    c=0
+                }
+               var c = localStorage.getItem("clicks");
                 function onClick() {
                     c=c+1
                     if(c>=10){
@@ -24,7 +27,7 @@
                     }
                     document.getElementById("clicks").innerHTML = c
                 }
-                        
+                         localStorage.setItem("clicks", c);
             </script>
     </head>
     <body>
