@@ -58,7 +58,7 @@ if(typeof(Storage)!=="undefined")
     {
     localStorage.click=1;
     }
-  document.getElementById("result").innerHTML="You have clicked the button " + localStorage.click + " time(s).";
+  document.getElementById("result").innerHTML= localStorage.click;
   }
 else
   {
@@ -72,10 +72,9 @@ else
 </script>
 </head>
 <body onload="showNum()">
-<p><button onclick="clickCounter()" type="button"><img src=http://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button></p>
+<p><button onclick="clickCounter()" type="button"><img src="http://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button></p>
 
 <div id="result"></div>
 <p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 </body>
 </html>
