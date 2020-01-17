@@ -6,10 +6,11 @@
     <style>
     </style>
     <script>
-      var x = 3;
-      localStorage.setItem("item", x)
-      
-        document.getElementById("e").innerHTML = localStorage.getItem("item");
+      var x = 0;
+while(true) {
+  x = x+1;
+  document.getElementById("e").innerHTML = x;
+}
     </script>
   </head>
   <body>
