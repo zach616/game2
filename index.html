@@ -1,20 +1,16 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>
-      "okay"
-    </title>
     <style>
     </style>
     <script>
-      var x = 0;
-while(true) {
-  x = x+1;
-  document.getElementById("e").innerHTML = x;
-}
+       setInterval(function() { counter() }, 0);
+      function counter {
+      document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "white";
+      }
     </script>
   </head>
   <body>
-    <p id="e">okay</p>
-    <button onClick="okay">Click</button>
   </body>
 </html>
